@@ -3,56 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <title>Telmon's Portfolio Landing Page</title>
     <style>
-        /* Basic CSS for layout and design */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
+
         header {
             background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            color: #fff;
+            padding: 1em 0;
         }
-        main {
-            padding: 20px;
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             text-align: center;
+            margin: 0;
         }
-        .cta-button {
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
             background-color: #007BFF;
-            color: white;
-            padding: 15px 25px;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
         }
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            margin-top: 20px;
+
+        section {
+            padding: 20px;
             text-align: center;
-            padding: 10px;
+        }
+
+        .feature {
+            margin: 20px 0;
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
             background-color: #333;
-            color: white;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-links li a {
+            color: #007BFF;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Landing Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h2>Your Project Tagline</h2>
-        <p>This is a simple, clean landing page to introduce your project, app, or service.</p>
-        <a href="#" class="cta-button">Get Started</a>
-    </main>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <img src="cover.png" alt="Cover Image" class="cover-image">
+        <h1>Telmon's Project</h1>
+        <p>Innovative solutions for modern challenges.</p>
+        <a href="https://github.com/telmon95/MVP.git" class="button">View Project</a>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <img src="cover1.png" alt="Feature 1">
+            <h3>Real-time Weather Data</h3>
+            <p>Retrieve and display the latest weather information.</p>
+        </div>
+        <div class="feature">
+            <img src="cover1.png" alt="Feature 2">
+            <h3>Responsive Design</h3>
+            <p>Fully responsive design that ensures optimal usability across various devices, from desktops to mobile phones.</p>
+        </div>
+        <div class="feature">
+            <img src="cover2.png" alt="Feature 3">
+            <h3>Comprehensive Error Handling</h3>
+            <p>User-friendly error messages for invalid inputs and network issues to enhance the overall user experience.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This project was inspired by my passion for technology and solving real-world problems. The idea started as a personal challenge to build something meaningful and evolved into a robust application. It’s a portfolio project for Holberton School.</p>
+        <p>Connect with my team:</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/telmon-maluleka-9a0699146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/telmon95" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/DEOXYRIBOSE404" target="_blank">Twitter</a></li>
+        </ul>
+        <p>Check out the project's GitHub repository: <a href="https://github.com/telmon95/MVP.git">GitHub Repo</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name or Company</p>
+        <p>&copy; 2024 Telmon. All rights reserved.</p>
     </footer>
 </body>
 </html>
